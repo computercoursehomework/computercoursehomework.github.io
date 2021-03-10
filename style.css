@@ -100,3 +100,39 @@ body{
     color: rgb(70, 70, 70);
     outline: none;
 }
+
+@media screen and (max-width: 600px){
+    .main{
+        margin-top: 90px;
+    }
+    .h-1{
+        font-size: 20px;
+    }
+    .h-2{
+        font-size: 10px;
+    }
+    .ins-info{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: .5px solid gray;
+        font-size: 12px;
+    }
+    .ins-title{
+        font-size: 14px;
+    }
+    .todays-hw{
+        margin-top: 20px;
+    }
+    .todays-hw-title{
+        font-size: 16px;
+        color: rgb(136, 136, 136);
+        background-color: rgb(32, 32, 32);
+    }
+    .todays-hw button{
+        width: 30%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
