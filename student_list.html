@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentlist.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Student List</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="d1">Computer Course</div>
+        <div class="d2">computercoursehomework.github.io</div>
+        <div class="top-nav-bar">
+            <button onclick="redirHome()">Home</button>
+            <button id="downloadhw">Download HW</button>
+            <button onclick="openMail()">Upload HW</button>
+            <button id="active">Student List</button>
+            <button onclick="openMail()">Contact</button>
+        </div> 
+    </div>
+<div class="main">
+<div class="table-title">Student List</div>
+<center>
+<table>
+    <tr>
+        <td class="bold">SL No.</td>
+        <td class="bold">Student Name</td>
+        <td class="bold">Ins. Name</td>
+        <td class="bold">Course Session</td>
+        <td class="bold">Class Taken(Std)</td>
+        <td class="bold">Class Attended</td>
+    </tr>
+    <tr>
+        <td>01</td>
+        <td>Toufiq Rahman Gazi</td>
+        <td>Rehan Akon</td>
+        <td>March 25 - April 25</td>
+        <td>5</td>
+        <td>3</td>
+    </tr>
+</table>
+</center>
+    </div>
+    <div id="DownloadModal" class="download_modal">
+
+        <!-- Modal content -->
+        <div class="download-modal-content">
+            <span class="close">&times;</span> <br>
+    
+            <div class="form-box">
+                <form onsubmit="return download()">
+                    <div class="titltho">Download Home Work</div>
+                    <label for="">Student ID</label>
+                    <input type="text" name="studentid" id="javstudentid"  placeholder="BCC1S1" onchange="return validation()">
+                    <span id="studentiderror" class="error-message"></span><br>
+                    <label for="">Course ID</label>
+                    <input type="text" name="courseid" id="javcourseid"  placeholder="BCC1" onchange="return validation()">
+                    <span id="courseiderror" class="error-message"></span><br>
+                    <input type="submit" id="submit" value="Download" name="submit">
+                </form>
+            </div>
+            
+        </div>
+    
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
